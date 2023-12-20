@@ -1,0 +1,168 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    122,
+                    80
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_index": true,
+                    "_default1_list": true,
+                    "_default2_show": true,
+                    "_default3_new_create": true,
+                    "_default4_edit_update": true,
+                    "_default5_delete": true,
+                    "customActions": []
+                },
+                "name": "Calculator",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1564742788306"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "customerid",
+                            "propertyType": "String",
+                            "uid": "608358464648"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    382,
+                    80
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_index": true,
+                    "_default1_list": true,
+                    "_default2_show": true,
+                    "_default3_new_create": true,
+                    "_default4_edit_update": true,
+                    "_default5_delete": true,
+                    "customActions": []
+                },
+                "name": "Productfinder",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1463267569850"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "customerid",
+                            "propertyType": "String",
+                            "uid": "7156127595"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Adds Einfach E-Auto components to your application. Requires an active subscription.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 11.5.0-11.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": false,
+            "generateEmptyGitRepository": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "11.5.0-11.5.99",
+            "version": "11.0.0"
+        },
+        "extensionKey": "eea_components",
+        "name": "EEA Components",
+        "originalExtensionKey": "eea_components",
+        "originalVendorName": "Eea",
+        "persons": [
+            {
+                "company": "Einfacheauto",
+                "email": "softtechwebseo@gmail.com",
+                "name": "Tashko Valkov",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Calculator=>list,show,new,create,edit,update,delete",
+                    "noncacheableActions": ""
+                },
+                "description": "Shows EEA calculator.",
+                "key": "eeacalculator",
+                "name": "EEA Calculator"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Productfinder=>list,show,new,create,edit,update,delete",
+                    "noncacheableActions": ""
+                },
+                "description": "Find and shows Einfach E-Auto productfinders.",
+                "key": "productfinder",
+                "name": "EEA Product Finder"
+            }
+        ],
+        "vendorName": "Eea"
+    },
+    "wires": [],
+    "storagePath": "\/home\/hightech\/t11\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2023-10-11 09:46",
+        "extension_builder_version": "11.0.9",
+        "be_user": " (1)"
+    }
+}

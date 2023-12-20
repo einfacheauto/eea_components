@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2023-10-18T12:00:00Z" product-name="eea_components">
+		<header/>
+		<body>
+			<trans-unit id="tx_eeacomponents_domain_model_calculator" resname="tx_eeacomponents_domain_model_calculator">
+				<source>Calculator</source>
+				<target state="translated">Calculator</target>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_calculator.customerid" resname="tx_eeacomponents_domain_model_calculator.customerid">
+				<source>Customerid</source>
+				<target state="translated">Customerid</target>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_productfinder" resname="tx_eeacomponents_domain_model_productfinder">
+				<source>Productfinder</source>
+				<target state="translated">Productfinder</target>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_productfinder.customerid" resname="tx_eeacomponents_domain_model_productfinder.customerid">
+				<source>Customerid</source>
+				<target state="translated">Customerid</target>
+			</trans-unit>
+
+			<trans-unit id="components.customerid" resname="components.customerid">
+				<source>Customer ID: Mandatory field.</source>
+				<target state="translated">Kundennummer: Pflichtfeld.</target>
+			</trans-unit>
+			<trans-unit id="components.srcturl" resname="components.srcturl">
+				<source>Left part of the URL - before the Customer ID. Mandatory field. Example: https://mysite.com/components.</source>
+				<target state="translated">Linker Teil der URL – vor der Kunden-ID. Pflichtfeld. Beispiel: https://mysite.com/components.</target>
+			</trans-unit>
+			<trans-unit id="components.mjscalc" resname="components.mjscalc">
+				<source>Mjs Calculator file name: Full Mjs filename (with the extension). Right part of the URL - after the Customer ID. Mandatory field. Example: calculator.mjs</source>
+				<target state="translated">Dateiname des Mjs-Rechners: Vollständiger Mjs-Dateiname (mit der Erweiterung). Rechter Teil der URL – nach der Kunden-ID. Pflichtfeld. Beispiel: Rechner.mjs</target>
+			</trans-unit>
+			<trans-unit id="components.mjsprodfinder" resname="components.mjsprodfinder">
+				<source>Mjs ProductFinder file name: Full Mjs filename (with the extension). Right part of the URL - after the Customer ID. Mandatory field. Example: productfinder.mjs</source>
+				<target state="translated">Mjs ProductFinder-Dateiname: Vollständiger Mjs-Dateiname (mit der Erweiterung). Rechter Teil der URL – nach der Kunden-ID. Pflichtfeld. Beispiel: productfinder.mjs</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

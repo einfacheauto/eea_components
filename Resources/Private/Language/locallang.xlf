@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:eea_components/Resources/Private/Language/locallang.xlf" date="2023-10-11T21:46:43Z" product-name="eea_components">
+		<header/>
+		<body>
+			<trans-unit id="tx_eeacomponents_domain_model_calculator" resname="tx_eeacomponents_domain_model_calculator">
+				<source>Calculator</source>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_calculator.customerid" resname="tx_eeacomponents_domain_model_calculator.customerid">
+				<source>Customerid</source>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_productfinder" resname="tx_eeacomponents_domain_model_productfinder">
+				<source>Productfinder</source>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_productfinder.customerid" resname="tx_eeacomponents_domain_model_productfinder.customerid">
+				<source>Customerid</source>
+			</trans-unit>
+
+			<trans-unit id="components.customerid" resname="components.customerid">
+				<source>Customer ID: Mandatory field.</source>
+			</trans-unit>
+			<trans-unit id="components.srcturl" resname="components.srcturl">
+				<source>Left part of the URL - before the Customer ID. Mandatory field. Example: https://mysite.com/components.</source>
+			</trans-unit>
+			<trans-unit id="components.mjscalc" resname="components.mjscalc">
+				<source>Mjs Calculator file name: Full Mjs filename (with the extension). Right part of the URL - after the Customer ID. Mandatory field. Example: calculator.mjs</source>
+			</trans-unit>
+			<trans-unit id="components.mjsprodfinder" resname="components.mjsprodfinder">
+				<source>Mjs ProductFinder file name: Full Mjs filename (with the extension). Right part of the URL - after the Customer ID. Mandatory field. Example: productfinder.mjs</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

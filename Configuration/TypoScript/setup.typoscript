@@ -1,0 +1,88 @@
+plugin.tx_eeacomponents_eeacalculator {
+    view {
+        templateRootPaths.0 = EXT:eea_components/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_eeacomponents_eeacalculator.view.templateRootPath}
+        partialRootPaths.0 = EXT:eea_components/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_eeacomponents_eeacalculator.view.partialRootPath}
+        layoutRootPaths.0 = EXT:eea_components/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_eeacomponents_eeacalculator.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_eeacomponents_eeacalculator.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+        customeridnum = {$plugin.tx_eeacomponents_eeacalculator.components.customeridnum}
+        sourcescript = {$plugin.tx_eeacomponents_eeacalculator.components.sourcescript}
+        mjsfile = {$plugin.tx_eeacomponents_eeacalculator.components.mjsfile}
+    }
+}
+plugin.tx_eeacomponents_productfinder {
+    view {
+        templateRootPaths.0 = EXT:eea_components/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_eeacomponents_productfinder.view.templateRootPath}
+        partialRootPaths.0 = EXT:eea_components/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_eeacomponents_productfinder.view.partialRootPath}
+        layoutRootPaths.0 = EXT:eea_components/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_eeacomponents_productfinder.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_eeacomponents_productfinder.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+        customeridnum = {$plugin.tx_eeacomponents_productfinder.components.customeridnum}
+        sourcescript = {$plugin.tx_eeacomponents_productfinder.components.sourcescript}
+        mjsfile = {$plugin.tx_eeacomponents_productfinder.components.mjsfile}
+    }
+}
+
+# these classes are only used in auto-generated templates
+plugin.tx_eeacomponents._CSS_DEFAULT_STYLE (
+    textarea.f3-form-error {
+        background-color: #FF9F9F;
+        border: 1px #FF0000 solid;
+    }
+
+    input.f3-form-error {
+        background-color: #FF9F9F;
+        border: 1px #FF0000 solid;
+    }
+
+    .tx-eea-components table {
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    .tx-eea-components table th {
+        font-weight: bold;
+    }
+
+    .tx-eea-components table td {
+        vertical-align: top;
+    }
+
+    .typo3-messages .message-error {
+        color: red;
+    }
+
+    .typo3-messages .message-ok {
+        color: green;
+    }
+)

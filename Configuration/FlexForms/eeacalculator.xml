@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>General</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+
+          <settings.srcturl>
+            <TCEforms>
+              <label>Url</label>
+              <config>
+                <type>input</type>
+                <size>200</size>                
+              </config>
+            </TCEforms>
+          </settings.srcturl>  
+
+          <settings.customerid>
+            <TCEforms>
+              <label>Customer ID</label>
+              <config>
+                <type>input</type>
+                <size>50</size>                
+              </config>
+            </TCEforms>
+          </settings.customerid>  
+
+          <settings.mjsfilename>
+            <TCEforms>
+              <label>Mjs file name</label>
+              <config>
+                <type>input</type>
+                <size>100</size>                
+              </config>
+            </TCEforms>
+          </settings.mjsfilename>  
+
+        </el>
+      </ROOT>
+    </sDEF>
+
+  </sheets>
+</T3DataStructure>

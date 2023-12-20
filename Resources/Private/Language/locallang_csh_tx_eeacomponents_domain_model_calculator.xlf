@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:eea_components/Resources/Private/Language/locallang_csh_tx_eeacomponents_domain_model_calculator.xlf" date="2023-10-11T21:46:43Z" product-name="eea_components">
+		<header/>
+		<body>
+			<trans-unit id="customerid.description" resname="customerid.description">
+				<source>customerid</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

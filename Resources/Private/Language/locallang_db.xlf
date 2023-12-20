@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:eea_components/Resources/Private/Language/locallang_db.xlf" date="2023-10-11T21:46:43Z" product-name="eea_components">
+		<header/>
+		<body>
+			<trans-unit id="tx_eeacomponents_domain_model_calculator" resname="tx_eeacomponents_domain_model_calculator">
+				<source>Calculator</source>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_calculator.customerid" resname="tx_eeacomponents_domain_model_calculator.customerid">
+				<source>Customerid</source>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_productfinder" resname="tx_eeacomponents_domain_model_productfinder">
+				<source>Productfinder</source>
+			</trans-unit>
+			<trans-unit id="tx_eeacomponents_domain_model_productfinder.customerid" resname="tx_eeacomponents_domain_model_productfinder.customerid">
+				<source>Customerid</source>
+			</trans-unit>
+			<trans-unit id="tx_eea_components_eeacalculator.name" resname="tx_eea_components_eeacalculator.name">
+				<source>EEA Calculator</source>
+			</trans-unit>
+			<trans-unit id="tx_eea_components_eeacalculator.description" resname="tx_eea_components_eeacalculator.description">
+				<source>Adds Einfach E-Auto components to your application. Requires an active subscription.</source>
+			</trans-unit>
+			<trans-unit id="tx_eea_components_productfinder.name" resname="tx_eea_components_productfinder.name">
+				<source>EEA Product Finder</source>
+			</trans-unit>
+			<trans-unit id="tx_eea_components_productfinder.description" resname="tx_eea_components_productfinder.description">
+				<source>Find and shows Einfach E-Auto products.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
