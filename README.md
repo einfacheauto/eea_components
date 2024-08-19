@@ -8,7 +8,7 @@ Welcome to our project! This project is built on the latest version of TYPO3 and
 2. [Getting Started](#getting-started)
 3. [Development Guidelines](#development-guidelines)
 4. [Testing](#testing)
-5. [Conventional Commits](#conventional-commits)
+5. [Conventional Commits](#conventional-commits) 
 6. [Contributing](#contributing)
 7. [License](#license)
 
