@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Domain\Model;
+namespace Eea\EeaComponents12\Domain\Model;
 
 
 /**
@@ -11,7 +11,7 @@ namespace Eea\EeaComponents\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2023 Tashko Valkov <softtechwebseo@gmail.com>, Einfacheauto
+ * (c) 2024 Tashko Valkov <softtechwebseo@gmail.com>, Einfacheauto
  */
 
 /**
