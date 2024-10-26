@@ -1,6 +1,6 @@
 #  EEA Components
 
-Welcome to our project! This project is built on the latest version of TYPO3 and follows best practices for development and collaboration.
+Welcome to our project! This project is built on the TYPO3 version 12 and follows best practices for development and collaboration.
 
 ## Table of Contents
 
@@ -20,10 +20,10 @@ This TYPO3 project aims to [brief project description, e.g., "deliver a high-per
 
 ### Prerequisites
 
-- TYPO3 vX.X.X
-- PHP vX.X.X
-- Composer vX.X.X
-- MySQL or MariaDB
+- Typo3 v.12.4.x
+- PHP v.8.1.29
+- Composer v.X.X.X
+- MySQL or MariaDB (Client API header version: 10.6.18-MariaDB)
 
 ### Installation
 
