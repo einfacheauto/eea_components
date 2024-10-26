@@ -1,24 +1,24 @@
-#name: CI
-#
-#on:
-#  push:
-#  pull_request:
-#
-#jobs:
-#
-#  testsuite:
-#    name: all tests
-#    runs-on: ubuntu-latest
-#    strategy:
-#      matrix:
-#        php: [ '8.2', '8.3', '8.4' ]
-#    steps:
-#
-#      - name: Extract branch name
-#        shell: bash
-#        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-#        id: extract_branch
-#
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  testsuite:
+    name: all tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [ '8.2', '8.3', '8.4' ]
+    steps:
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+
 #      - name: Checkout ${{ steps.extract_branch.outputs.branch }}
 #        uses: actions/checkout@v4
 #        with:
