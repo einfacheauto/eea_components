@@ -14,7 +14,7 @@ plugin.tx_eeacomponents12_calculator {
     components {
         
         # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.srcturl 
-        sourcescript = https://einfacheauto-production.s3.eu-central-1.amazonaws.com/production/components
+        sourcescript = https://media.einfacheauto.de/partners/production
         # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
         mjsfile = eea-calculator-savings.mjs
         # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
@@ -37,7 +37,7 @@ plugin.tx_eeacomponents12_productfinder {
     }
     components {
         # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.srcturl 
-        sourcescript = https://einfacheauto-production.s3.eu-central-1.amazonaws.com/production/components
+        sourcescript = https://media.einfacheauto.de/partners/production
         # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
         mjsfile = eea-product-finder.mjs
         # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
