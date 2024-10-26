@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/einfacheauto/eea_components/compare/v0.1.3...v0.1.3) (2024-10-26)
+
+
+### Documentation
+
+* added README.md ([f54c8ad](https://github.com/einfacheauto/eea_components/commit/f54c8ad8ae35bafb3247aec531a6fefdd8f1be11))
+
 ## [0.1.3](https://github.com/Bais92/eea_components/compare/v0.1.3...v0.1.3) (2024-08-19)
 
 
