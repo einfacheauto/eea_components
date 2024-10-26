@@ -94,6 +94,6 @@ Each commit message should have the following format:
 - `fix(contact-form): correct email validation`
 
 
-## License
+## Copyright
 
-This project is proprietary and not licensed for public distribution. All rights are reserved by the project owner. Unauthorized copying, modification, or distribution of this project’s code and resources is strictly prohibited.
+Copyright (c) 2019-2025 [Einfach E-Auto Mobility Solutions GmbH](https://einfacheauto.de)
