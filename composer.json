@@ -9,7 +9,6 @@
             "role": "Developer"
         }
     ],
-    "license": "UNLICENSED",
     "private": "true",
     "require": {
         "typo3/cms-core": "^12.4"
