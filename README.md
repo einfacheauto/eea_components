@@ -20,7 +20,7 @@ This TYPO3 project aims to [brief project description, e.g., "deliver a high-per
 
 ### Prerequisites
 
-- TYPO3 vX.X.X
+- TYPO3 v11.4.x
 - PHP vX.X.X
 - Composer vX.X.X
 - MySQL or MariaDB
