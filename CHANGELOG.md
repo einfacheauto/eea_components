@@ -1,5 +1,22 @@
 # Changelog
 
+## [13.0.0](https://github.com/einfacheauto/eea_components/compare/v12.0.0...v13.0.0) (2024-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* refactored component Naming
+
+### Bug Fixes
+
+* refactored component Naming ([d97cada](https://github.com/einfacheauto/eea_components/commit/d97cadab1b5dd1eb41692477aec8d1b4faae84ee))
+
+
+### Miscellaneous Chores
+
+* **testing:** Added testing to CI ([13c21f2](https://github.com/einfacheauto/eea_components/commit/13c21f2562b813207f02e2231b6974a18b980312))
+* **testing:** Added testing to CI ([0b82983](https://github.com/einfacheauto/eea_components/commit/0b82983f679fc50f14fe1a292dba019c4eec5f72))
+
 ## [12.0.0](https://github.com/einfacheauto/eea_components/compare/v0.1.3...v12.0.0) (2024-10-27)
 
 
