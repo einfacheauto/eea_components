@@ -4,3 +4,4 @@
 Build/testing-docker/.env
 composer.json.testing
 composer.lock
+public/
