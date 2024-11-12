@@ -40,8 +40,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_eeacomponents12_domain_model_calculator',
-                'foreign_table_where' => 'AND {#tx_eeacomponents12_domain_model_calculator}.{#pid}=###CURRENT_PID### AND {#tx_eeacomponents12_domain_model_calculator}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_EeaComponents_domain_model_calculator',
+                'foreign_table_where' => 'AND {#tx_EeaComponents_domain_model_calculator}.{#pid}=###CURRENT_PID### AND {#tx_EeaComponents_domain_model_calculator}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [

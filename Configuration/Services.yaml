@@ -4,6 +4,6 @@ services:
     autoconfigure: true
     public: false
 
-  Eea\EeaComponents12\:
+  Eea\EeaComponents\:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'
