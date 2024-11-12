@@ -31,23 +31,23 @@ jeweiligen Root-Seiten konfiguriert sind.
 * Navigieren Sie sich zum Template Tool (Web > Template und wählen Sie dann die Root-Seite (hier: Home) > Info/Bearbeiten) 
 und klicken dort auf "Vollständigen Template-Datensatz bearbeiten".
 
-<img src="Bilder/TYPO3SettingsConfigureExtensions.png" width="600"></br></br>
+<img src="images/TYPO3SettingsConfigureExtensions.png" width="600"></br></br>
 * Aktivieren Sie dort unter dem Reiter "Enthält" die Konstanten für die Erweiterung. 
 Falls die Erweiterung nicht unter 'Ausgewählte Objekte', sondern unter 'Verfügbare Objekte' aufgeführt wird, 
 aktivieren Sie diese bitte, indem Sie den Eintrag der Erweiterung (`EEA Components (eea_components)`) anklicken 
 und die Änderungen speichern:
 
-<img src="Bilder/TYPO3SettingsConfigureExtensions2.png" width="600"></br></br>
+<img src="images/TYPO3SettingsConfigureExtensions2.png" width="600"></br></br>
 
 ##### Eingeben der CustomerID
 * Navigieren Sie sich zum Constant Editor (Web > Template und wählen Sie dann die Root-Seite (hier: Home) > Constant Editor)
 
-<img src="Bilder/TYPO3SettingsConfigureExtensions3.png" width="600"></br></br>
+<img src="images/TYPO3SettingsConfigureExtensions3.png" width="600"></br></br>
 * Im Kategorie-Dropdown-Menü tragen Sie bitte für jedes Plugin der Erweiterung `PLUGIN.TX_EEA_COMPONENTS*` in das Feld CUSTOMER ID 
 (plugin.tx_eeacomponents_[name des plugins].components.customeridnum) die Kundennummer (CustomerID) ein. 
 Speichern Sie anschließend.
 
-<img src="Bilder/TYPO3SettingsConfigureExtensions4.png" width="600"></br></br>
+<img src="images/TYPO3SettingsConfigureExtensions4.png" width="600"></br></br>
 * Wiederholen Sie diesen Vorgang für alle Root-Seiten.
 
 ##### Optional: Anzeigen der Staging-Umgebung
@@ -60,7 +60,7 @@ Sie in der Staging-Phase sehen möchten, in das Feld SOURCE SCRIPT (Linker Teil 
 (plugin.tx_eeacomponents_[name des plugins].components.sourcescript) die Staging-URI an. 
 * Speichern Sie anschließend.
 
-<img src="Bilder/TYPO3SettingsConfigureExtensions5.png" width="600"></br></br>
+<img src="images/TYPO3SettingsConfigureExtensions5.png" width="600"></br></br>
 
 * Wiederholen Sie diesen Vorgang für alle Root-Seiten und Komponenten
 
@@ -76,7 +76,7 @@ Die Einfach E-Auto Komponenten können nun ganz bequem überall auf CMS-Seiten e
 der jeweiligen Landingpage oder Website die Komponente über das jeweilige Plugin einfügen. 
 Das Plugin finden Sie am schnellsten über die Suche in den Plugins: 
 
-<img src="Bilder/TYPO3AddPlugins.png" width="600"></br></br>
+<img src="images/TYPO3AddPlugins.png" width="600"></br></br>
 
 
 Anschließend können Sie, wenn nötig, das Modul per Drag-and-Drop an die gewünschte Stelle ziehen.
