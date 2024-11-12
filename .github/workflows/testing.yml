@@ -14,6 +14,9 @@ jobs:
         php: [ '8.2', '8.3', '8.4']
 
     steps:
+      - uses: KengoTODA/actions-setup-docker-compose@v1
+        with:
+          version: '2.14.2' # the full version of `docker-compose` command
       - name: Extract branch name
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
@@ -24,7 +27,7 @@ jobs:
         run: docker --version
         id: docker_setup
 
-      - name: Test Docker Setup
+      - name: Docker Compose Setup
         shell: bash
         run: docker-compose --version
         id: docker_compose_setup
