@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents12\Domain\Model;
+namespace Eea\EeaComponents\Domain\Model;
 
 
 /**

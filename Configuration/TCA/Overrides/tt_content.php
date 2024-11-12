@@ -2,13 +2,13 @@
 defined('TYPO3') || die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'EeaComponents12',
+    'EeaComponents',
     'Calculator',
     'Calculator (Eea)'
 );
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'EeaComponents12',
+    'EeaComponents',
     'Productfinder',
     'Product Finder (Eea)'
 );

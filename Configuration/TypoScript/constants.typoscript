@@ -1,47 +1,47 @@
-plugin.tx_eeacomponents12_calculator {
+plugin.tx_EeaComponents_calculator {
     view {
-        # cat=plugin.tx_eeacomponents12_calculator/file; type=string; label=Path to template root (FE)
+        # cat=plugin.tx_EeaComponents_calculator/file; type=string; label=Path to template root (FE)
         templateRootPath = EXT:eea_components12/Resources/Private/Templates/
-        # cat=plugin.tx_eeacomponents12_calculator/file; type=string; label=Path to template partials (FE)
+        # cat=plugin.tx_EeaComponents_calculator/file; type=string; label=Path to template partials (FE)
         partialRootPath = EXT:eea_components12/Resources/Private/Partials/
-        # cat=plugin.tx_eeacomponents12_calculator/file; type=string; label=Path to template layouts (FE)
+        # cat=plugin.tx_EeaComponents_calculator/file; type=string; label=Path to template layouts (FE)
         layoutRootPath = EXT:eea_components12/Resources/Private/Layouts/
     }
     persistence {
-        # cat=plugin.tx_eeacomponents12_calculator//a; type=string; label=Default storage PID
+        # cat=plugin.tx_EeaComponents_calculator//a; type=string; label=Default storage PID
         storagePid =
     }
     components {
         
-        # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.srcturl 
+        # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.srcturl
         sourcescript = https://media.einfacheauto.de/partners/production
-        # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
+        # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
         mjsfile = eea-calculator-savings.mjs
-        # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
-        # cat=plugin.tx_eeacomponents12_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.customerid
+        # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
+        # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.customerid
         customeridnum = 
     }
 }
-plugin.tx_eeacomponents12_productfinder {
+plugin.tx_EeaComponents_productfinder {
     view {
-        # cat=plugin.tx_eeacomponents12_productfinder/file; type=string; label=Path to template root (FE)
+        # cat=plugin.tx_EeaComponents_productfinder/file; type=string; label=Path to template root (FE)
         templateRootPath = EXT:eea_components12/Resources/Private/Templates/
-        # cat=plugin.tx_eeacomponents12_productfinder/file; type=string; label=Path to template partials (FE)
+        # cat=plugin.tx_EeaComponents_productfinder/file; type=string; label=Path to template partials (FE)
         partialRootPath = EXT:eea_components12/Resources/Private/Partials/
-        # cat=plugin.tx_eeacomponents12_productfinder/file; type=string; label=Path to template layouts (FE)
+        # cat=plugin.tx_EeaComponents_productfinder/file; type=string; label=Path to template layouts (FE)
         layoutRootPath = EXT:eea_components12/Resources/Private/Layouts/
     }
     persistence {
-        # cat=plugin.tx_eeacomponents12_productfinder//a; type=string; label=Default storage PID
+        # cat=plugin.tx_EeaComponents_productfinder//a; type=string; label=Default storage PID
         storagePid =
     }
     components {
-        # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.srcturl 
+        # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.srcturl
         sourcescript = https://media.einfacheauto.de/partners/production
-        # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
+        # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
         mjsfile = eea-product-finder.mjs
-        # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
-        # cat=plugin.tx_eeacomponents12_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.customerid
+        # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.mjscalc
+        # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components12/Resources/Private/Language/locallang.xlf:components.customerid
         customeridnum = 
     }
 }
