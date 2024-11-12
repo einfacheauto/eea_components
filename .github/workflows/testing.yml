@@ -19,6 +19,11 @@ jobs:
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
         id: extract_branch
 
+      - name: Test Docker Setup
+        shell: bash
+        run: docker ps
+        id: docker_setup
+
       - name: Checkout ${{ steps.extract_branch.outputs.branch }}
         uses: actions/checkout@v4
         with:
