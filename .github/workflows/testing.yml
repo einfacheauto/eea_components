@@ -21,8 +21,13 @@ jobs:
 
       - name: Test Docker Setup
         shell: bash
-        run: docker ps
+        run: docker --version
         id: docker_setup
+
+      - name: Test Docker Setup
+        shell: bash
+        run: docker-composer --version
+        id: docker_compose_setup
 
       - name: Checkout ${{ steps.extract_branch.outputs.branch }}
         uses: actions/checkout@v4
