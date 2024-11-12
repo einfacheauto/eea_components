@@ -26,7 +26,7 @@ jobs:
 
       - name: Test Docker Setup
         shell: bash
-        run: docker-composer --version
+        run: docker-compose --version
         id: docker_compose_setup
 
       - name: Checkout ${{ steps.extract_branch.outputs.branch }}
