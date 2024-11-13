@@ -38,8 +38,8 @@ jobs:
         with:
           ref: ${{ steps.extract_branch.outputs.branch }}
 
-      - name: Composer validate
-        run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s composerValidate
+      - name: Install dependencies
+        run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s composerUpdate
 
       - name: Lint PHP
         run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s lint
