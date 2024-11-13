@@ -38,9 +38,6 @@ jobs:
         with:
           ref: ${{ steps.extract_branch.outputs.branch }}
 
-      - name: Composer
-        run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s ${{ matrix.minMax }}
-
       - name: Composer validate
         run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s composerValidate
 
