@@ -11,25 +11,35 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.2', '8.3', '8.4', '8.5']
+        php: [ '8.2', '8.3', '8.4']
+        minMax: [ 'composerInstallMin', 'composerInstallMax' ]
 
     steps:
-
+      - uses: KengoTODA/actions-setup-docker-compose@v1
+        with:
+          version: '2.14.2' # the full version of `docker-compose` command
       - name: Extract branch name
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
         id: extract_branch
+
+      - name: Test Docker Setup
+        shell: bash
+        run: docker --version
+        id: docker_setup
+
+      - name: Docker Compose Setup
+        shell: bash
+        run: docker-compose --version
+        id: docker_compose_setup
 
       - name: Checkout ${{ steps.extract_branch.outputs.branch }}
         uses: actions/checkout@v4
         with:
           ref: ${{ steps.extract_branch.outputs.branch }}
 
-      - name: Composer
-        run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s ${{ matrix.minMax }}
-
-      - name: Composer validate
-        run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s composerValidate
+      - name: Install dependencies
+        run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s composerUpdate
 
       - name: Lint PHP
         run: Build/Scripts/runTests.sh -p ${{ matrix.php }} -s lint
