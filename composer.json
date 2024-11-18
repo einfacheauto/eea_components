@@ -1,7 +1,7 @@
 {
   "name": "eea/eea-components",
   "type": "typo3-cms-extension",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "description": "Adds Einfach E-Auto components to your application. Requires an active subscription.",
   "authors": [
     {
