@@ -1,10 +1,10 @@
 plugin.tx_EeaComponents_calculator {
     view {
-        templateRootPaths.0 = EXT:eea_components12/Resources/Private/Templates/
+        templateRootPaths.0 = EXT:eea_components/Resources/Private/Templates/
         templateRootPaths.1 = {$plugin.tx_EeaComponents_calculator.view.templateRootPath}
-        partialRootPaths.0 = EXT:eea_components12/Resources/Private/Partials/
+        partialRootPaths.0 = EXT:eea_components/Resources/Private/Partials/
         partialRootPaths.1 = {$plugin.tx_EeaComponents_calculator.view.partialRootPath}
-        layoutRootPaths.0 = EXT:eea_components12/Resources/Private/Layouts/
+        layoutRootPaths.0 = EXT:eea_components/Resources/Private/Layouts/
         layoutRootPaths.1 = {$plugin.tx_EeaComponents_calculator.view.layoutRootPath}
     }
     persistence {
@@ -27,11 +27,11 @@ plugin.tx_EeaComponents_calculator {
 }
 plugin.tx_EeaComponents_productfinder {
     view {
-        templateRootPaths.0 = EXT:eea_components12/Resources/Private/Templates/
+        templateRootPaths.0 = EXT:eea_components/Resources/Private/Templates/
         templateRootPaths.1 = {$plugin.tx_EeaComponents_productfinder.view.templateRootPath}
-        partialRootPaths.0 = EXT:eea_components12/Resources/Private/Partials/
+        partialRootPaths.0 = EXT:eea_components/Resources/Private/Partials/
         partialRootPaths.1 = {$plugin.tx_EeaComponents_productfinder.view.partialRootPath}
-        layoutRootPaths.0 = EXT:eea_components12/Resources/Private/Layouts/
+        layoutRootPaths.0 = EXT:eea_components/Resources/Private/Layouts/
         layoutRootPaths.1 = {$plugin.tx_EeaComponents_productfinder.view.layoutRootPath}
     }
     persistence {
