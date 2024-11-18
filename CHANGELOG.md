@@ -1,5 +1,16 @@
 # Changelog
 
+## [14.0.0](https://github.com/einfacheauto/eea_components/compare/v13.0.0...v14.0.0) (2024-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* renamed extension key from eea_components12 to eea_components
+
+### Miscellaneous Chores
+
+* renamed extension key from eea_components12 to eea_components ([57e2817](https://github.com/einfacheauto/eea_components/commit/57e2817cd8a3c4ffc74a826bda14094c98c1f72e))
+
 ## [13.0.0](https://github.com/einfacheauto/eea_components/compare/v12.0.0...v13.0.0) (2024-11-17)
 
 
