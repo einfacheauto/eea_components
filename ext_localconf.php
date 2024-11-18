@@ -46,18 +46,18 @@ call_user_func(function () {
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     calculator {
-                        iconIdentifier = eea_components12-plugin-calculator
-                        title = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.name
-                        description = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.description
+                        iconIdentifier = eea_components-plugin-calculator
+                        title = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.name
+                        description = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.description
                         tt_content_defValues {
                             CType = list
                             list_type = EeaComponents_calculator
                         }
                     }
                     productfinder {
-                        iconIdentifier = eea_components12-plugin-productfinder
-                        title = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.name
-                        description = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.description
+                        iconIdentifier = eea_components-plugin-productfinder
+                        title = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.name
+                        description = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.description
                         tt_content_defValues {
                             CType = list
                             list_type = EeaComponents_productfinder
