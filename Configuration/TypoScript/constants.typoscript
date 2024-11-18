@@ -17,7 +17,6 @@ plugin.tx_EeaComponents_calculator {
         sourcescript = https://media.einfacheauto.de/partners/production
         # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components/Resources/Private/Language/locallang.xlf:components.mjscalc
         mjsfile = eea-calculator-savings.mjs
-        # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components/Resources/Private/Language/locallang.xlf:components.mjscalc
         # cat=plugin.tx_EeaComponents_calculator/components; type=string; label=LLL:EXT:eea_components/Resources/Private/Language/locallang.xlf:components.customerid
         customeridnum = 
     }
@@ -40,7 +39,6 @@ plugin.tx_EeaComponents_productfinder {
         sourcescript = https://media.einfacheauto.de/partners/production
         # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components/Resources/Private/Language/locallang.xlf:components.mjscalc
         mjsfile = eea-product-finder.mjs
-        # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components/Resources/Private/Language/locallang.xlf:components.mjscalc
         # cat=plugin.tx_EeaComponents_productfinder/components; type=string; label=LLL:EXT:eea_components/Resources/Private/Language/locallang.xlf:components.customerid
         customeridnum = 
     }
