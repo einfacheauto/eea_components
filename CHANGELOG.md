@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.0.1](https://github.com/einfacheauto/eea_components/compare/v14.0.0...v14.0.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* fixed customerID in constants.typoscript ([72b56a3](https://github.com/einfacheauto/eea_components/commit/72b56a35ee6c75b2141edeb21a8489d1f4d144e6))
+
 ## [14.0.0](https://github.com/einfacheauto/eea_components/compare/v13.0.0...v14.0.0) (2024-11-18)
 
 
