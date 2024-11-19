@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Controller;
+namespace Eea\EeaComponents12\Controller;
 
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -27,14 +27,14 @@ class ProductfinderController extends ActionController
     /**
      * productfinderRepository
      *
-     * @var \Eea\EeaComponents\Domain\Repository\ProductfinderRepository
+     * @var \Eea\EeaComponents12\Domain\Repository\ProductfinderRepository
      */
     protected $productfinderRepository = null;
 
     /**
-     * @param \Eea\EeaComponents\Domain\Repository\ProductfinderRepository $productfinderRepository
+     * @param \Eea\EeaComponents12\Domain\Repository\ProductfinderRepository $productfinderRepository
      */
-    public function injectProductfinderRepository(\Eea\EeaComponents\Domain\Repository\ProductfinderRepository $productfinderRepository)
+    public function injectProductfinderRepository(\Eea\EeaComponents12\Domain\Repository\ProductfinderRepository $productfinderRepository)
     {
         $this->productfinderRepository = $productfinderRepository;
     }
@@ -72,10 +72,10 @@ class ProductfinderController extends ActionController
     /**
      * action show
      *
-     * @param \Eea\EeaComponents\Domain\Model\Productfinder $productfinder
+     * @param \Eea\EeaComponents12\Domain\Model\Productfinder $productfinder
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function showAction(\Eea\EeaComponents\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
+    public function showAction(\Eea\EeaComponents12\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('productfinder', $productfinder);
         return $this->htmlResponse();
@@ -94,9 +94,9 @@ class ProductfinderController extends ActionController
     /**
      * action create
      *
-     * @param \Eea\EeaComponents\Domain\Model\Productfinder $newProductfinder
+     * @param \Eea\EeaComponents12\Domain\Model\Productfinder $newProductfinder
      */
-    public function createAction(\Eea\EeaComponents\Domain\Model\Productfinder $newProductfinder)
+    public function createAction(\Eea\EeaComponents12\Domain\Model\Productfinder $newProductfinder)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->productfinderRepository->add($newProductfinder);
@@ -106,11 +106,11 @@ class ProductfinderController extends ActionController
     /**
      * action edit
      *
-     * @param \Eea\EeaComponents\Domain\Model\Productfinder $productfinder
+     * @param \Eea\EeaComponents12\Domain\Model\Productfinder $productfinder
      * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("productfinder")
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function editAction(\Eea\EeaComponents\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
+    public function editAction(\Eea\EeaComponents12\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('productfinder', $productfinder);
         return $this->htmlResponse();
@@ -119,9 +119,9 @@ class ProductfinderController extends ActionController
     /**
      * action update
      *
-     * @param \Eea\EeaComponents\Domain\Model\Productfinder $productfinder
+     * @param \Eea\EeaComponents12\Domain\Model\Productfinder $productfinder
      */
-    public function updateAction(\Eea\EeaComponents\Domain\Model\Productfinder $productfinder)
+    public function updateAction(\Eea\EeaComponents12\Domain\Model\Productfinder $productfinder)
     {
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->productfinderRepository->update($productfinder);
@@ -131,9 +131,9 @@ class ProductfinderController extends ActionController
     /**
      * action delete
      *
-     * @param \Eea\EeaComponents\Domain\Model\Productfinder $productfinder
+     * @param \Eea\EeaComponents12\Domain\Model\Productfinder $productfinder
      */
-    public function deleteAction(\Eea\EeaComponents\Domain\Model\Productfinder $productfinder)
+    public function deleteAction(\Eea\EeaComponents12\Domain\Model\Productfinder $productfinder)
     {
         $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->productfinderRepository->remove($productfinder);

@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3') or die();
 
-use Eea\EeaComponents\Controller\ProductfinderController;
+use Eea\EeaComponents12\Controller\ProductfinderController;
 
 call_user_func(function () {
     // Register a plugin
@@ -14,28 +14,28 @@ call_user_func(function () {
     */
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        'EeaComponents',
+        'EeaComponents12',
         'Calculator',
         [
-            \Eea\EeaComponents\Controller\CalculatorController::class => 'list, show, new, create, edit, update, delete'
+            \Eea\EeaComponents12\Controller\CalculatorController::class => 'list, show, new, create, edit, update, delete'
         ],
         // non-cacheable actions
         [
-            \Eea\EeaComponents\Controller\CalculatorController::class => 'create, update, delete',
-            \Eea\EeaComponents\Controller\ProductfinderController::class => 'create, update, delete'
+            \Eea\EeaComponents12\Controller\CalculatorController::class => 'create, update, delete',
+            \Eea\EeaComponents12\Controller\ProductfinderController::class => 'create, update, delete'
         ]
     );
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        'EeaComponents',
+        'EeaComponents12',
         'Productfinder',
         [
-            \Eea\EeaComponents\Controller\ProductfinderController::class => 'list, show, new, create, edit, update, delete'
+            \Eea\EeaComponents12\Controller\ProductfinderController::class => 'list, show, new, create, edit, update, delete'
         ],
         // non-cacheable actions
         [
-            \Eea\EeaComponents\Controller\ProductfinderController::class => 'create, update, delete',
-            \Eea\EeaComponents\Controller\CalculatorController::class => 'create, update, delete',
+            \Eea\EeaComponents12\Controller\ProductfinderController::class => 'create, update, delete',
+            \Eea\EeaComponents12\Controller\CalculatorController::class => 'create, update, delete',
         ]
     );
 
@@ -46,21 +46,21 @@ call_user_func(function () {
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     calculator {
-                        iconIdentifier = eea_components-plugin-calculator
-                        title = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.name
-                        description = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.description
+                        iconIdentifier = eea_components12-plugin-calculator
+                        title = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.name
+                        description = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.description
                         tt_content_defValues {
                             CType = list
-                            list_type = EeaComponents_calculator
+                            list_type = eeacomponents12_calculator
                         }
                     }
                     productfinder {
-                        iconIdentifier = eea_components-plugin-productfinder
-                        title = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.name
-                        description = LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.description
+                        iconIdentifier = eea_components12-plugin-productfinder
+                        title = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.name
+                        description = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.description
                         tt_content_defValues {
                             CType = list
-                            list_type = EeaComponents_productfinder
+                            list_type = eeacomponents12_productfinder
                         }
                     }
                 }

@@ -1,14 +1,14 @@
-plugin.tx_EeaComponents_calculator {
+plugin.tx_eeacomponents12_calculator {
     view {
-        templateRootPaths.0 = EXT:eea_components/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_EeaComponents_calculator.view.templateRootPath}
-        partialRootPaths.0 = EXT:eea_components/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_EeaComponents_calculator.view.partialRootPath}
-        layoutRootPaths.0 = EXT:eea_components/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_EeaComponents_calculator.view.layoutRootPath}
+        templateRootPaths.0 = EXT:eea_components12/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_eeacomponents12_calculator.view.templateRootPath}
+        partialRootPaths.0 = EXT:eea_components12/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_eeacomponents12_calculator.view.partialRootPath}
+        layoutRootPaths.0 = EXT:eea_components12/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_eeacomponents12_calculator.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_EeaComponents_calculator.persistence.storagePid}
+        storagePid = {$plugin.tx_eeacomponents12_calculator.persistence.storagePid}
         #recursive = 1
     }
     features {
@@ -20,22 +20,22 @@ plugin.tx_EeaComponents_calculator {
         #callDefaultActionIfActionCantBeResolved = 1
     }
     settings {
-        customeridnum = {$plugin.tx_EeaComponents_calculator.components.customeridnum}
-        sourcescript = {$plugin.tx_EeaComponents_calculator.components.sourcescript}
-        mjsfile = {$plugin.tx_EeaComponents_calculator.components.mjsfile}
+        customeridnum = {$plugin.tx_eeacomponents12_calculator.components.customeridnum}
+        sourcescript = {$plugin.tx_eeacomponents12_calculator.components.sourcescript}
+        mjsfile = {$plugin.tx_eeacomponents12_calculator.components.mjsfile}
     }
 }
-plugin.tx_EeaComponents_productfinder {
+plugin.tx_eeacomponents12_productfinder {
     view {
-        templateRootPaths.0 = EXT:eea_components/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_EeaComponents_productfinder.view.templateRootPath}
-        partialRootPaths.0 = EXT:eea_components/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_EeaComponents_productfinder.view.partialRootPath}
-        layoutRootPaths.0 = EXT:eea_components/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_EeaComponents_productfinder.view.layoutRootPath}
+        templateRootPaths.0 = EXT:eea_components12/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_eeacomponents12_productfinder.view.templateRootPath}
+        partialRootPaths.0 = EXT:eea_components12/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_eeacomponents12_productfinder.view.partialRootPath}
+        layoutRootPaths.0 = EXT:eea_components12/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_eeacomponents12_productfinder.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_EeaComponents_productfinder.persistence.storagePid}
+        storagePid = {$plugin.tx_eeacomponents12_productfinder.persistence.storagePid}
         #recursive = 1
     }
     features {
@@ -47,14 +47,14 @@ plugin.tx_EeaComponents_productfinder {
         #callDefaultActionIfActionCantBeResolved = 1
     }
     settings {
-        customeridnum = {$plugin.tx_EeaComponents_productfinder.components.customeridnum}
-        sourcescript = {$plugin.tx_EeaComponents_productfinder.components.sourcescript}
-        mjsfile = {$plugin.tx_EeaComponents_productfinder.components.mjsfile}
+        customeridnum = {$plugin.tx_eeacomponents12_productfinder.components.customeridnum}
+        sourcescript = {$plugin.tx_eeacomponents12_productfinder.components.sourcescript}
+        mjsfile = {$plugin.tx_eeacomponents12_productfinder.components.mjsfile}
     }
 }
 
 # these classes are only used in auto-generated templates
-plugin.tx_EeaComponents._CSS_DEFAULT_STYLE (
+plugin.tx_eeacomponents12._CSS_DEFAULT_STYLE (
     textarea.f3-form-error {
         background-color: #FF9F9F;
         border: 1px #FF0000 solid;

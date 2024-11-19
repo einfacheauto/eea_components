@@ -1,4 +1,4 @@
-CREATE TABLE tx_EeaComponents_domain_model_calculator (
+CREATE TABLE tx_eeacomponents12_domain_model_calculator (
   uid int(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   pid int(10) UNSIGNED NOT NULL DEFAULT 0,
   tstamp int(10) UNSIGNED NOT NULL DEFAULT 0,
@@ -21,7 +21,7 @@ CREATE TABLE tx_EeaComponents_domain_model_calculator (
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-CREATE TABLE tx_EeaComponents_domain_model_productfinder (
+CREATE TABLE tx_eeacomponents12_domain_model_productfinder (
   uid int(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   pid int(10) UNSIGNED NOT NULL DEFAULT 0,
   tstamp int(10) UNSIGNED NOT NULL DEFAULT 0,
