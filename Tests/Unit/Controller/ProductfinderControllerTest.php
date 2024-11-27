@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Tests\Unit\Controller;
+namespace Eea\Eeacomponents\Tests\Unit\Controller;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use TYPO3\TestingFramework\Core\AccessibleObjectInterface;
@@ -17,14 +17,14 @@ use TYPO3Fluid\Fluid\View\ViewInterface;
 class ProductfinderControllerTest extends UnitTestCase
 {
     /**
-     * @var \Eea\EeaComponents\Controller\ProductfinderController|MockObject|AccessibleObjectInterface
+     * @var \Eea\Eeacomponents\Controller\ProductfinderController|MockObject|AccessibleObjectInterface
      */
     protected $subject;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder($this->buildAccessibleProxy(\Eea\EeaComponents\Controller\ProductfinderController::class))
+        $this->subject = $this->getMockBuilder($this->buildAccessibleProxy(\Eea\Eeacomponents\Controller\ProductfinderController::class))
             ->onlyMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -44,7 +44,7 @@ class ProductfinderControllerTest extends UnitTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $productfinderRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\ProductfinderRepository::class)
+        $productfinderRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\ProductfinderRepository::class)
             ->onlyMethods(['findAll'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -63,7 +63,7 @@ class ProductfinderControllerTest extends UnitTestCase
      */
     public function showActionAssignsTheGivenProductfinderToView(): void
     {
-        $productfinder = new \Eea\EeaComponents\Domain\Model\Productfinder();
+        $productfinder = new \Eea\Eeacomponents\Domain\Model\Productfinder();
 
         $view = $this->getMockBuilder(ViewInterface::class)->getMock();
         $this->subject->_set('view', $view);
@@ -77,9 +77,9 @@ class ProductfinderControllerTest extends UnitTestCase
      */
     public function createActionAddsTheGivenProductfinderToProductfinderRepository(): void
     {
-        $productfinder = new \Eea\EeaComponents\Domain\Model\Productfinder();
+        $productfinder = new \Eea\Eeacomponents\Domain\Model\Productfinder();
 
-        $productfinderRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\ProductfinderRepository::class)
+        $productfinderRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\ProductfinderRepository::class)
             ->onlyMethods(['add'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -95,7 +95,7 @@ class ProductfinderControllerTest extends UnitTestCase
      */
     public function editActionAssignsTheGivenProductfinderToView(): void
     {
-        $productfinder = new \Eea\EeaComponents\Domain\Model\Productfinder();
+        $productfinder = new \Eea\Eeacomponents\Domain\Model\Productfinder();
 
         $view = $this->getMockBuilder(ViewInterface::class)->getMock();
         $this->subject->_set('view', $view);
@@ -109,9 +109,9 @@ class ProductfinderControllerTest extends UnitTestCase
      */
     public function updateActionUpdatesTheGivenProductfinderInProductfinderRepository(): void
     {
-        $productfinder = new \Eea\EeaComponents\Domain\Model\Productfinder();
+        $productfinder = new \Eea\Eeacomponents\Domain\Model\Productfinder();
 
-        $productfinderRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\ProductfinderRepository::class)
+        $productfinderRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\ProductfinderRepository::class)
             ->onlyMethods(['update'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -127,9 +127,9 @@ class ProductfinderControllerTest extends UnitTestCase
      */
     public function deleteActionRemovesTheGivenProductfinderFromProductfinderRepository(): void
     {
-        $productfinder = new \Eea\EeaComponents\Domain\Model\Productfinder();
+        $productfinder = new \Eea\Eeacomponents\Domain\Model\Productfinder();
 
-        $productfinderRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\ProductfinderRepository::class)
+        $productfinderRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\ProductfinderRepository::class)
             ->onlyMethods(['remove'])
             ->disableOriginalConstructor()
             ->getMock();

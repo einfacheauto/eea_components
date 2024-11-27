@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3') or die();
 
-use Eea\EeaComponents12\Controller\ProductfinderController;
+//use Eea\Eeacomponents\Controller\ProductfinderController;
 
 call_user_func(function () {
     // Register a plugin
@@ -14,28 +14,28 @@ call_user_func(function () {
     */
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        'EeaComponents12',
+        'Eeacomponents',
         'Calculator',
         [
-            \Eea\EeaComponents12\Controller\CalculatorController::class => 'list, show, new, create, edit, update, delete'
+            \Eea\Eeacomponents\Controller\CalculatorController::class => 'list, show, new, create, edit, update, delete'
         ],
         // non-cacheable actions
         [
-            \Eea\EeaComponents12\Controller\CalculatorController::class => 'create, update, delete',
-            \Eea\EeaComponents12\Controller\ProductfinderController::class => 'create, update, delete'
+            \Eea\Eeacomponents\Controller\CalculatorController::class => 'create, update, delete',
+            \Eea\Eeacomponents\Controller\ProductfinderController::class => 'create, update, delete'
         ]
     );
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        'EeaComponents12',
+        'Eeacomponents',
         'Productfinder',
         [
-            \Eea\EeaComponents12\Controller\ProductfinderController::class => 'list, show, new, create, edit, update, delete'
+            \Eea\Eeacomponents\Controller\ProductfinderController::class => 'list, show, new, create, edit, update, delete'
         ],
         // non-cacheable actions
         [
-            \Eea\EeaComponents12\Controller\ProductfinderController::class => 'create, update, delete',
-            \Eea\EeaComponents12\Controller\CalculatorController::class => 'create, update, delete',
+            \Eea\Eeacomponents\Controller\ProductfinderController::class => 'create, update, delete',
+            \Eea\Eeacomponents\Controller\CalculatorController::class => 'create, update, delete',
         ]
     );
 
@@ -51,7 +51,7 @@ call_user_func(function () {
                         description = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.description
                         tt_content_defValues {
                             CType = list
-                            list_type = eeacomponents12_calculator
+                            list_type = eeacomponents_calculator
                         }
                     }
                     productfinder {
@@ -60,7 +60,7 @@ call_user_func(function () {
                         description = LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.description
                         tt_content_defValues {
                             CType = list
-                            list_type = eeacomponents12_productfinder
+                            list_type = eeacomponents_productfinder
                         }
                     }
                 }

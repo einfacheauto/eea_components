@@ -8,10 +8,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'softtechwebseo@gmail.com',
     'state' => 'stable',
     'clearCacheOnLoad' => 0,
-    'version' => '12.0.1',
+    'version' => '12.1.3',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-12.4.99',
+            'typo3' => '12.4.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
