@@ -113,7 +113,7 @@
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 => 11.5.0-11.5.99\n",
+            "dependsOn": "typo3 => 12.4.0-12.4.99\n",
             "disableLocalization": false,
             "disableVersioning": false,
             "generateDocumentationTemplate": false,
@@ -121,12 +121,12 @@
             "generateEmptyGitRepository": false,
             "sourceLanguage": "en",
             "state": "alpha",
-            "targetVersion": "11.5.0-11.5.99",
-            "version": "11.0.0"
+            "targetVersion": "12.4.0-12.4.99",
+            "version": "12.0.0"
         },
-        "extensionKey": "eea_components",
+        "extensionKey": "eeacomponents",
         "name": "EEA Components",
-        "originalExtensionKey": "eea_components",
+        "originalExtensionKey": "eeacomponents",
         "originalVendorName": "Eea",
         "persons": [
             {

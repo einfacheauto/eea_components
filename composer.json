@@ -1,7 +1,7 @@
 {
-    "name": "eea/eea-components12",
+    "name": "eea/eeacomponents",
     "type": "typo3-cms-extension",
-    "version": "12.0.0",
+    "version": "13.0.0",
     "description": "Adds Einfach E-Auto components to your application. Requires an active subscription.",
     "authors": [
         {
@@ -9,19 +9,19 @@
             "role": "Developer"
         }
     ],
-    "license": "proprietary",
-    "private": "true",
+    "license": "GPL-2.0-or-later",
     "require": {
-        "typo3/cms-core": "^12.4"
+        "typo3/cms-core": "^12.4",
+        "php": ">=8.1"
     },
     "autoload": {
         "psr-4": {
-            "Eea\\EeaComponents12\\": "Classes"
+            "Eea\\Eeacomponents\\": "Classes"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "eea_components12"
+            "extension-key": "eeacomponents"
         }
     },
     "require-dev": {
@@ -29,11 +29,11 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Eea\\EeaComponents12\\Tests\\": "Tests"
+            "Eea\\Eeacomponents\\Tests\\": "Tests"
         }
     },
     "replace": {
-        "typo3-ter/eea-components12": "self.version"
+        "typo3-ter/eeacomponents": "self.version"
     },
     "config": {
         "vendor-dir": ".Build/vendor",

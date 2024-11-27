@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Tests\Unit\Domain\Model;
+namespace Eea\Eeacomponents\Tests\Unit\Domain\Model;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use TYPO3\TestingFramework\Core\AccessibleObjectInterface;
@@ -16,7 +16,7 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 class ProductfinderTest extends UnitTestCase
 {
     /**
-     * @var \Eea\EeaComponents\Domain\Model\Productfinder|MockObject|AccessibleObjectInterface
+     * @var \Eea\Eeacomponents\Domain\Model\Productfinder|MockObject|AccessibleObjectInterface
      */
     protected $subject;
 
@@ -25,7 +25,7 @@ class ProductfinderTest extends UnitTestCase
         parent::setUp();
 
         $this->subject = $this->getAccessibleMock(
-            \Eea\EeaComponents\Domain\Model\Productfinder::class,
+            \Eea\Eeacomponents\Domain\Model\Productfinder::class,
             ['dummy']
         );
     }

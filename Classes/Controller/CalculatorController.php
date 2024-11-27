@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents12\Controller;
+namespace Eea\Eeacomponents\Controller;
 
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -27,14 +27,14 @@ class CalculatorController extends ActionController
     /**
      * calculatorRepository
      *
-     * @var \Eea\EeaComponents12\Domain\Repository\CalculatorRepository
+     * @var \Eea\Eeacomponents\Domain\Repository\CalculatorRepository
      */
     protected $calculatorRepository = null;
 
     /**
-     * @param \Eea\EeaComponents12\Domain\Repository\CalculatorRepository $calculatorRepository
+     * @param \Eea\Eeacomponents\Domain\Repository\CalculatorRepository $calculatorRepository
      */
-    public function injectCalculatorRepository(\Eea\EeaComponents12\Domain\Repository\CalculatorRepository $calculatorRepository)
+    public function injectCalculatorRepository(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository $calculatorRepository)
     {
         $this->calculatorRepository = $calculatorRepository;
     }
@@ -72,10 +72,10 @@ class CalculatorController extends ActionController
     /**
      * action show
      *
-     * @param \Eea\EeaComponents12\Domain\Model\Calculator $calculator
+     * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function showAction(\Eea\EeaComponents12\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
+    public function showAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('calculator', $calculator);
         return $this->htmlResponse();
@@ -94,9 +94,9 @@ class CalculatorController extends ActionController
     /**
      * action create
      *
-     * @param \Eea\EeaComponents12\Domain\Model\Calculator $newCalculator
+     * @param \Eea\Eeacomponents\Domain\Model\Calculator $newCalculator
      */
-    public function createAction(\Eea\EeaComponents12\Domain\Model\Calculator $newCalculator)
+    public function createAction(\Eea\Eeacomponents\Domain\Model\Calculator $newCalculator)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->calculatorRepository->add($newCalculator);
@@ -106,11 +106,11 @@ class CalculatorController extends ActionController
     /**
      * action edit
      *
-     * @param \Eea\EeaComponents12\Domain\Model\Calculator $calculator
+     * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
      * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("calculator")
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function editAction(\Eea\EeaComponents12\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
+    public function editAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('calculator', $calculator);
         return $this->htmlResponse();
@@ -119,9 +119,9 @@ class CalculatorController extends ActionController
     /**
      * action update
      *
-     * @param \Eea\EeaComponents12\Domain\Model\Calculator $calculator
+     * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
      */
-    public function updateAction(\Eea\EeaComponents12\Domain\Model\Calculator $calculator)
+    public function updateAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator)
     {
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->calculatorRepository->update($calculator);
@@ -131,9 +131,9 @@ class CalculatorController extends ActionController
     /**
      * action delete
      *
-     * @param \Eea\EeaComponents12\Domain\Model\Calculator $calculator
+     * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
      */
-    public function deleteAction(\Eea\EeaComponents12\Domain\Model\Calculator $calculator)
+    public function deleteAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator)
     {
         $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->calculatorRepository->remove($calculator);

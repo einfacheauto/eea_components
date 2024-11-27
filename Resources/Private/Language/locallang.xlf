@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:eea_components/Resources/Private/Language/locallang.xlf" date="2023-10-11T21:46:43Z" product-name="eea_components">
+	<file source-language="en" datatype="plaintext" original="EXT:eeacomponents/Resources/Private/Language/locallang.xlf" date="2023-10-11T21:46:43Z" product-name="eeacomponents">
 		<header/>
 		<body>
 			<trans-unit id="tx_eeacomponents_domain_model_calculator" resname="tx_eeacomponents_domain_model_calculator">
@@ -20,7 +20,7 @@
 				<source>Customer ID: Mandatory field.</source>
 			</trans-unit>
 			<trans-unit id="components.srcturl" resname="components.srcturl">
-				<source>Left part of the URL - before the Customer ID. Mandatory field. Example: https://mysite.com/components.</source>
+				<source>Left part of the URL - before the Customer ID. Mandatory field. No slash at the end. Example: https://mysite.com/components.</source>
 			</trans-unit>
 			<trans-unit id="components.mjscalc" resname="components.mjscalc">
 				<source>Mjs Calculator file name: Full Mjs filename (with the extension). Right part of the URL - after the Customer ID. Mandatory field. Example: calculator.mjs</source>

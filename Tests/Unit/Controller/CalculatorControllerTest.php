@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Tests\Unit\Controller;
+namespace Eea\Eeacomponents\Tests\Unit\Controller;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use TYPO3\TestingFramework\Core\AccessibleObjectInterface;
@@ -17,14 +17,14 @@ use TYPO3Fluid\Fluid\View\ViewInterface;
 class CalculatorControllerTest extends UnitTestCase
 {
     /**
-     * @var \Eea\EeaComponents\Controller\CalculatorController|MockObject|AccessibleObjectInterface
+     * @var \Eea\Eeacomponents\Controller\CalculatorController|MockObject|AccessibleObjectInterface
      */
     protected $subject;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder($this->buildAccessibleProxy(\Eea\EeaComponents\Controller\CalculatorController::class))
+        $this->subject = $this->getMockBuilder($this->buildAccessibleProxy(\Eea\Eeacomponents\Controller\CalculatorController::class))
             ->onlyMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -44,7 +44,7 @@ class CalculatorControllerTest extends UnitTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $calculatorRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\CalculatorRepository::class)
+        $calculatorRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository::class)
             ->onlyMethods(['findAll'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -63,7 +63,7 @@ class CalculatorControllerTest extends UnitTestCase
      */
     public function showActionAssignsTheGivenCalculatorToView(): void
     {
-        $calculator = new \Eea\EeaComponents\Domain\Model\Calculator();
+        $calculator = new \Eea\Eeacomponents\Domain\Model\Calculator();
 
         $view = $this->getMockBuilder(ViewInterface::class)->getMock();
         $this->subject->_set('view', $view);
@@ -77,9 +77,9 @@ class CalculatorControllerTest extends UnitTestCase
      */
     public function createActionAddsTheGivenCalculatorToCalculatorRepository(): void
     {
-        $calculator = new \Eea\EeaComponents\Domain\Model\Calculator();
+        $calculator = new \Eea\Eeacomponents\Domain\Model\Calculator();
 
-        $calculatorRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\CalculatorRepository::class)
+        $calculatorRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository::class)
             ->onlyMethods(['add'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -95,7 +95,7 @@ class CalculatorControllerTest extends UnitTestCase
      */
     public function editActionAssignsTheGivenCalculatorToView(): void
     {
-        $calculator = new \Eea\EeaComponents\Domain\Model\Calculator();
+        $calculator = new \Eea\Eeacomponents\Domain\Model\Calculator();
 
         $view = $this->getMockBuilder(ViewInterface::class)->getMock();
         $this->subject->_set('view', $view);
@@ -109,9 +109,9 @@ class CalculatorControllerTest extends UnitTestCase
      */
     public function updateActionUpdatesTheGivenCalculatorInCalculatorRepository(): void
     {
-        $calculator = new \Eea\EeaComponents\Domain\Model\Calculator();
+        $calculator = new \Eea\Eeacomponents\Domain\Model\Calculator();
 
-        $calculatorRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\CalculatorRepository::class)
+        $calculatorRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository::class)
             ->onlyMethods(['update'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -127,9 +127,9 @@ class CalculatorControllerTest extends UnitTestCase
      */
     public function deleteActionRemovesTheGivenCalculatorFromCalculatorRepository(): void
     {
-        $calculator = new \Eea\EeaComponents\Domain\Model\Calculator();
+        $calculator = new \Eea\Eeacomponents\Domain\Model\Calculator();
 
-        $calculatorRepository = $this->getMockBuilder(\Eea\EeaComponents\Domain\Repository\CalculatorRepository::class)
+        $calculatorRepository = $this->getMockBuilder(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository::class)
             ->onlyMethods(['remove'])
             ->disableOriginalConstructor()
             ->getMock();
