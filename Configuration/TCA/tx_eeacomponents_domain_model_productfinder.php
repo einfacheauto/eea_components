@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder',
+        'title' => 'LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder',
         'label' => 'customerid',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'customerid',
-        'iconfile' => 'EXT:eea_components/Resources/Public/Icons/tx_eeacomponents_domain_model_productfinder.gif'
+        'iconfile' => 'EXT:eea_components12/Resources/Public/Icons/tx_eeacomponents_domain_model_productfinder.gif'
     ],
     'types' => [
         '1' => ['showitem' => 'customerid, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
@@ -96,7 +96,7 @@ return [
 
         'customerid' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:eea_components/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder.customerid',
+            'label' => 'LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder.customerid',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
