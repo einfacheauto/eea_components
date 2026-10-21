@@ -18,11 +18,13 @@ Die Hauptversion der Erweiterung entspricht der unterstützten TYPO3-Version.
 
 | Erweiterung | TYPO3    | Branch   | Support bis |
 |-------------|----------|----------|-------------|
-| 13.1+       | 13.4 LTS | `master` | aktiv       |
+| 13.1+       | 13.4 LTS | `master` | 31.12.2027  |
 | 12.x        | 12.4 LTS | `v12`    | 30.04.2027  |
 | 11.x        | 11.5 LTS | `v11`    | 31.12.2025  |
 
 _Hinweis: Version 13.0.0 unterstützt ausschließlich TYPO3 12.4. Für TYPO3 13 verwenden Sie bitte Version 13.1.0 oder neuer._
+
+Für TYPO3 12 und 11 erscheinen keine neuen Versionen mehr.
 
 ## Schritt 1: TYPO3 Erweiterung installieren
 
