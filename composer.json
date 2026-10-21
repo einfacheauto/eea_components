@@ -1,7 +1,6 @@
 {
     "name": "eea/eeacomponents",
     "type": "typo3-cms-extension",
-    "version": "13.0.0",
     "description": "Adds Einfach E-Auto components to your application. Requires an active subscription.",
     "authors": [
         {
@@ -11,8 +10,12 @@
     ],
     "license": "GPL-2.0-or-later",
     "require": {
-        "typo3/cms-core": "^12.4",
-        "php": ">=8.1"
+        "php": "^8.2",
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-extbase": "^13.4",
+        "typo3/cms-fluid": "^13.4",
+        "typo3/cms-frontend": "^13.4",
+        "typo3/cms-install": "^13.4"
     },
     "autoload": {
         "psr-4": {
@@ -21,11 +24,15 @@
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "eeacomponents"
+            "extension-key": "eeacomponents",
+            "web-dir": ".Build/public"
         }
     },
     "require-dev": {
-        "typo3/testing-framework": "^6.9.0"
+        "phpstan/phpstan": "^2.1",
+        "saschaegerer/phpstan-typo3": "^2.1",
+        "typo3/cms-fluid-styled-content": "^13.4",
+        "typo3/testing-framework": "^8.2"
     },
     "autoload-dev": {
         "psr-4": {
@@ -37,11 +44,35 @@
     },
     "config": {
         "vendor-dir": ".Build/vendor",
-        "bin-dir": ".Build/bin"
+        "bin-dir": ".Build/bin",
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "sort-packages": true
     },
     "scripts": {
-        "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        "ci:composer:validate": "@composer validate --strict",
+        "ci:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n1 -P4 php -l -n > /dev/null",
+        "ci:php:stan": "phpstan analyse --no-progress -c Build/phpstan/phpstan.neon",
+        "ci:tests:unit": "phpunit -c Build/phpunit/UnitTests.xml",
+        "ci:tests:functional": "phpunit -c Build/phpunit/FunctionalTests.xml",
+        "ci:tests": [
+            "@ci:tests:unit",
+            "@ci:tests:functional"
+        ],
+        "ci": [
+            "@ci:composer:validate",
+            "@ci:php:lint",
+            "@ci:php:stan",
+            "@ci:tests"
         ]
+    },
+    "scripts-descriptions": {
+        "ci": "Runs all checks that are executed in CI",
+        "ci:php:lint": "Lints all PHP files",
+        "ci:php:stan": "Runs PHPStan static analysis",
+        "ci:tests:unit": "Runs the unit tests",
+        "ci:tests:functional": "Runs the functional tests (SQLite by default)"
     }
 }

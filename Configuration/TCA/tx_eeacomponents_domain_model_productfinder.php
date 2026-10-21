@@ -1,11 +1,10 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder',
+        'title' => 'LLL:EXT:eeacomponents/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder',
         'label' => 'customerid',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'versioningWS' => true,
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -17,7 +16,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'customerid',
-        'iconfile' => 'EXT:eea_components12/Resources/Public/Icons/tx_eeacomponents_domain_model_productfinder.gif'
+        'iconfile' => 'EXT:eeacomponents/Resources/Public/Icons/tx_eeacomponents_domain_model_productfinder.gif'
     ],
     'types' => [
         '1' => ['showitem' => 'customerid, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
@@ -38,7 +37,7 @@ return [
                 'renderType' => 'selectSingle',
                 'default' => 0,
                 'items' => [
-                    ['', 0],
+                    ['label' => '', 'value' => 0],
                 ],
                 'foreign_table' => 'tx_eeacomponents_domain_model_productfinder',
                 'foreign_table_where' => 'AND {#tx_eeacomponents_domain_model_productfinder}.{#pid}=###CURRENT_PID### AND {#tx_eeacomponents_domain_model_productfinder}.{#sys_language_uid} IN (-1,0)',
@@ -57,9 +56,8 @@ return [
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        0 => '',
-                        1 => '',
-                        'invertStateDisplay' => true
+                        'label' => '',
+                        'invertStateDisplay' => true,
                     ]
                 ],
             ],
@@ -68,9 +66,8 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'eval' => 'datetime,int',
+                'type' => 'datetime',
+                'format' => 'datetime',
                 'default' => 0,
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
@@ -81,9 +78,8 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'eval' => 'datetime,int',
+                'type' => 'datetime',
+                'format' => 'datetime',
                 'default' => 0,
                 'range' => [
                     'upper' => mktime(0, 0, 0, 1, 1, 2038)
@@ -96,12 +92,12 @@ return [
 
         'customerid' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:eea_components12/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder.customerid',
+            'label' => 'LLL:EXT:eeacomponents/Resources/Private/Language/locallang_db.xlf:tx_eeacomponents_domain_model_productfinder.customerid',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim',
-                'default' => ''
+                'default' => '',
             ],
         ],
     

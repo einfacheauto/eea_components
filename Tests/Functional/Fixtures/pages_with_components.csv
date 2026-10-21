@@ -1,0 +1,7 @@
+"pages"
+,"uid","pid","title","slug","doktype"
+,1,0,"Root","/",1
+"tt_content"
+,"uid","pid","CType","header","colPos","sorting"
+,1,1,"eeacomponents_calculator","Calculator",0,256
+,2,1,"eeacomponents_productfinder","Product Finder",0,512

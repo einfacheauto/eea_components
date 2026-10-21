@@ -1,16 +1,22 @@
 <?php
 defined('TYPO3') || die();
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
+ExtensionUtility::registerPlugin(
     'Eeacomponents',
     'Calculator',
-    'Calculator (Eea)'
+    'LLL:EXT:eeacomponents/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.name',
+    'eeacomponents-plugin-calculator',
+    'plugins',
+    'LLL:EXT:eeacomponents/Resources/Private/Language/locallang_db.xlf:tx_eea_components_eeacalculator.description'
 );
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+ExtensionUtility::registerPlugin(
     'Eeacomponents',
     'Productfinder',
-    'Product Finder (Eea)'
+    'LLL:EXT:eeacomponents/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.name',
+    'eeacomponents-plugin-productfinder',
+    'plugins',
+    'LLL:EXT:eeacomponents/Resources/Private/Language/locallang_db.xlf:tx_eea_components_productfinder.description'
 );
-
-    

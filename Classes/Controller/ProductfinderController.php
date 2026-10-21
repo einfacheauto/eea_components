@@ -7,6 +7,8 @@ namespace Eea\Eeacomponents\Controller;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
+use TYPO3\CMS\Extbase\Annotation\IgnoreValidation;
 
 
 /**
@@ -34,7 +36,7 @@ class ProductfinderController extends ActionController
     /**
      * @param \Eea\Eeacomponents\Domain\Repository\ProductfinderRepository $productfinderRepository
      */
-    public function injectProductfinderRepository(\Eea\Eeacomponents\Domain\Repository\ProductfinderRepository $productfinderRepository)
+    public function injectProductfinderRepository(\Eea\Eeacomponents\Domain\Repository\ProductfinderRepository $productfinderRepository): void
     {
         $this->productfinderRepository = $productfinderRepository;
     }
@@ -95,21 +97,22 @@ class ProductfinderController extends ActionController
      * action create
      *
      * @param \Eea\Eeacomponents\Domain\Model\Productfinder $newProductfinder
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function createAction(\Eea\Eeacomponents\Domain\Model\Productfinder $newProductfinder)
+    public function createAction(\Eea\Eeacomponents\Domain\Model\Productfinder $newProductfinder): \Psr\Http\Message\ResponseInterface
     {
-        $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+        $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', ContextualFeedbackSeverity::WARNING);
         $this->productfinderRepository->add($newProductfinder);
-        $this->redirect('list');
+        return $this->redirect('list');
     }
 
     /**
      * action edit
      *
      * @param \Eea\Eeacomponents\Domain\Model\Productfinder $productfinder
-     * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("productfinder")
      * @return \Psr\Http\Message\ResponseInterface
      */
+    #[IgnoreValidation(['argumentName' => 'productfinder'])]
     public function editAction(\Eea\Eeacomponents\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('productfinder', $productfinder);
@@ -120,23 +123,25 @@ class ProductfinderController extends ActionController
      * action update
      *
      * @param \Eea\Eeacomponents\Domain\Model\Productfinder $productfinder
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function updateAction(\Eea\Eeacomponents\Domain\Model\Productfinder $productfinder)
+    public function updateAction(\Eea\Eeacomponents\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
     {
-        $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+        $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', ContextualFeedbackSeverity::WARNING);
         $this->productfinderRepository->update($productfinder);
-        $this->redirect('list');
+        return $this->redirect('list');
     }
 
     /**
      * action delete
      *
      * @param \Eea\Eeacomponents\Domain\Model\Productfinder $productfinder
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function deleteAction(\Eea\Eeacomponents\Domain\Model\Productfinder $productfinder)
+    public function deleteAction(\Eea\Eeacomponents\Domain\Model\Productfinder $productfinder): \Psr\Http\Message\ResponseInterface
     {
-        $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+        $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', ContextualFeedbackSeverity::WARNING);
         $this->productfinderRepository->remove($productfinder);
-        $this->redirect('list');
+        return $this->redirect('list');
     }
 }
