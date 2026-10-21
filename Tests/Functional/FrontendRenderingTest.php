@@ -50,7 +50,7 @@ final class FrontendRenderingTest extends FunctionalTestCase
 
         self::assertStringContainsString('<eea-calculator-savings></eea-calculator-savings>', $body);
         self::assertStringContainsString(
-            'src="https://media.einfacheauto.de/partners/production/4711/components/eea-calculator-savings.mjs"',
+            '<script type="module" src="https://media.einfacheauto.de/partners/production/4711/components/eea-calculator-savings.mjs"></script>',
             $body
         );
     }
@@ -62,7 +62,7 @@ final class FrontendRenderingTest extends FunctionalTestCase
 
         self::assertStringContainsString('<eea-product-finder></eea-product-finder>', $body);
         self::assertStringContainsString(
-            'src="https://media.einfacheauto.de/partners/production/4712/components/eea-product-finder.mjs"',
+            '<script type="module" src="https://media.einfacheauto.de/partners/production/4712/components/eea-product-finder.mjs"></script>',
             $body
         );
     }
