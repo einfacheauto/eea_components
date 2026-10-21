@@ -7,6 +7,8 @@ namespace Eea\Eeacomponents\Controller;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
+use TYPO3\CMS\Extbase\Annotation\IgnoreValidation;
 
 
 /**
@@ -34,7 +36,7 @@ class CalculatorController extends ActionController
     /**
      * @param \Eea\Eeacomponents\Domain\Repository\CalculatorRepository $calculatorRepository
      */
-    public function injectCalculatorRepository(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository $calculatorRepository)
+    public function injectCalculatorRepository(\Eea\Eeacomponents\Domain\Repository\CalculatorRepository $calculatorRepository): void
     {
         $this->calculatorRepository = $calculatorRepository;
     }
@@ -95,21 +97,22 @@ class CalculatorController extends ActionController
      * action create
      *
      * @param \Eea\Eeacomponents\Domain\Model\Calculator $newCalculator
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function createAction(\Eea\Eeacomponents\Domain\Model\Calculator $newCalculator)
+    public function createAction(\Eea\Eeacomponents\Domain\Model\Calculator $newCalculator): \Psr\Http\Message\ResponseInterface
     {
-        $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+        $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', ContextualFeedbackSeverity::WARNING);
         $this->calculatorRepository->add($newCalculator);
-        $this->redirect('list');
+        return $this->redirect('list');
     }
 
     /**
      * action edit
      *
      * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
-     * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("calculator")
      * @return \Psr\Http\Message\ResponseInterface
      */
+    #[IgnoreValidation(['argumentName' => 'calculator'])]
     public function editAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('calculator', $calculator);
@@ -120,23 +123,25 @@ class CalculatorController extends ActionController
      * action update
      *
      * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function updateAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator)
+    public function updateAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
     {
-        $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+        $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', ContextualFeedbackSeverity::WARNING);
         $this->calculatorRepository->update($calculator);
-        $this->redirect('list');
+        return $this->redirect('list');
     }
 
     /**
      * action delete
      *
      * @param \Eea\Eeacomponents\Domain\Model\Calculator $calculator
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function deleteAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator)
+    public function deleteAction(\Eea\Eeacomponents\Domain\Model\Calculator $calculator): \Psr\Http\Message\ResponseInterface
     {
-        $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+        $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', ContextualFeedbackSeverity::WARNING);
         $this->calculatorRepository->remove($calculator);
-        $this->redirect('list');
+        return $this->redirect('list');
     }
 }

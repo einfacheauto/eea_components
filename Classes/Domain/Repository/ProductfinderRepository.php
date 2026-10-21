@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Domain\Repository;
+namespace Eea\Eeacomponents\Domain\Repository;
 
 
 /**
@@ -16,6 +16,8 @@ namespace Eea\EeaComponents\Domain\Repository;
 
 /**
  * The repository for Productfinders
+ *
+ * @extends \TYPO3\CMS\Extbase\Persistence\Repository<\Eea\Eeacomponents\Domain\Model\Productfinder>
  */
 class ProductfinderRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {

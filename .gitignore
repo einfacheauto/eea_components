@@ -337,3 +337,7 @@ app/media/
 .env
 .envs/*
 !.envs/.local/
+
+### Composer / TYPO3 test environment
+.Build/
+composer.lock

@@ -7,14 +7,28 @@ in eine TYPO3 Website integrieren können. Diese werden über eine TYPO3-Erweite
 
 Damit die Einfach E-Auto-TYPO3-Erweiterung bei Ihnen installiert werden kann, benötigen Sie Folgendes:
 
-1. Eine Installation von TYPO3 (Version 12+).
+1. Eine Installation von TYPO3 13.4 LTS (für ältere TYPO3-Versionen siehe [Kompatibilität](#kompatibilität)).
 2. Administrator-Rechte für das Backend von TYPO3.
 3. Die Quelldatei der Erweiterung.
 4. Ihren individuellen Partnercode.
 
+## Kompatibilität
+
+Die Hauptversion der Erweiterung entspricht der unterstützten TYPO3-Version.
+
+| Erweiterung | TYPO3    | Branch   | Support bis |
+|-------------|----------|----------|-------------|
+| 13.1+       | 13.4 LTS | `master` | 31.12.2027  |
+| 12.x        | 12.4 LTS | `v12`    | 30.04.2027  |
+| 11.x        | 11.5 LTS | `v11`    | 31.12.2025  |
+
+_Hinweis: Version 13.0.0 unterstützt ausschließlich TYPO3 12.4. Für TYPO3 13 verwenden Sie bitte Version 13.1.0 oder neuer._
+
+Für TYPO3 12 und 11 erscheinen keine neuen Versionen mehr.
+
 ## Schritt 1: TYPO3 Erweiterung installieren
 
-Um die benutzerdefinierte Einfach E-Auto-Erweiterung in TYPO3 v11 zu installieren, sollten Sie Composer verwenden.
+Um die benutzerdefinierte Einfach E-Auto-Erweiterung in TYPO3 zu installieren, sollten Sie Composer verwenden.
 
 
 ```shell
@@ -81,9 +95,8 @@ oder it@einfacheauto.de** mit der/den jeweiligen **Domains, auf denen die Erweit
 Die Einfach E-Auto Komponenten können nun ganz bequem überall auf CMS-Seiten eingebunden werden. Dazu müssen Sie auf
 der jeweiligen Landingpage oder Website die Komponente ein Plugin einfügen.
 
-Dazu unter dem Reiter Plug-Ins den Contenttyp "Allgemeines Plug-In" auswählen. 
-Im Konfigurationsmenü des Plugins dann unter dem Reiter "Plug-In" 
-unter "Ausgewähltes Plug-in" das jeweilige Plugin auswählen und speichern.
+Dazu im Assistenten für neue Inhaltselemente unter dem Reiter "Plug-Ins" das gewünschte Element
+("EEA Calculator" oder "EEA Product Finder") auswählen und speichern.
 
 
 Anschließend können Sie, wenn nötig, das Modul per Drag-and-Drop an die gewünschte Stelle ziehen.
@@ -104,3 +117,21 @@ gerne zur Verfügung.
 ## Update der Komponente
 Um neue Funktionen bereitzustellen oder Sicherheitsupdates umzusetzen, werden wir die Typo3-Erweiterung 
 in unregelmäßigen Zeiträumen aktualisieren. 
+
+## Entwicklung
+
+Voraussetzungen: PHP 8.2+ (mit `intl`, `mbstring`, `pdo_sqlite`) und Composer.
+
+```shell
+composer install
+composer ci                                          # alle Prüfungen wie in der CI
+composer ci:php:stan                                 # PHPStan (Level 8)
+composer ci:tests:unit                               # Unit-Tests
+typo3DatabaseDriver=pdo_sqlite composer ci:tests:functional   # Funktionstests mit SQLite
+```
+
+Die GitHub-Actions-CI (`.github/workflows/ci.yml`) führt Lint, PHPStan, Unit- und Funktionstests
+für PHP 8.2 – 8.4 aus, die Funktionstests zusätzlich gegen MariaDB, MySQL und PostgreSQL.
+
+Releases erstellt release-please automatisch aus [Conventional Commits](https://www.conventionalcommits.org/).
+Die Hauptversion entspricht der TYPO3-Version und wird nur bewusst per `Release-As: x.y.z` im Commit angehoben.

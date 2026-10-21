@@ -16,6 +16,8 @@ namespace Eea\Eeacomponents\Domain\Repository;
 
 /**
  * The repository for Calculators
+ *
+ * @extends \TYPO3\CMS\Extbase\Persistence\Repository<\Eea\Eeacomponents\Domain\Model\Calculator>
  */
 class CalculatorRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {

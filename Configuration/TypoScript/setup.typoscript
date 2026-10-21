@@ -1,10 +1,10 @@
 plugin.tx_eeacomponents_calculator {
     view {
-        templateRootPaths.0 = EXT:eea_components12/Resources/Private/Templates/
+        templateRootPaths.0 = EXT:eeacomponents/Resources/Private/Templates/
         templateRootPaths.1 = {$plugin.tx_eeacomponents_calculator.view.templateRootPath}
-        partialRootPaths.0 = EXT:eea_components12/Resources/Private/Partials/
+        partialRootPaths.0 = EXT:eeacomponents/Resources/Private/Partials/
         partialRootPaths.1 = {$plugin.tx_eeacomponents_calculator.view.partialRootPath}
-        layoutRootPaths.0 = EXT:eea_components12/Resources/Private/Layouts/
+        layoutRootPaths.0 = EXT:eeacomponents/Resources/Private/Layouts/
         layoutRootPaths.1 = {$plugin.tx_eeacomponents_calculator.view.layoutRootPath}
     }
     persistence {
@@ -27,11 +27,11 @@ plugin.tx_eeacomponents_calculator {
 }
 plugin.tx_eeacomponents_productfinder {
     view {
-        templateRootPaths.0 = EXT:eea_components12/Resources/Private/Templates/
+        templateRootPaths.0 = EXT:eeacomponents/Resources/Private/Templates/
         templateRootPaths.1 = {$plugin.tx_eeacomponents_productfinder.view.templateRootPath}
-        partialRootPaths.0 = EXT:eea_components12/Resources/Private/Partials/
+        partialRootPaths.0 = EXT:eeacomponents/Resources/Private/Partials/
         partialRootPaths.1 = {$plugin.tx_eeacomponents_productfinder.view.partialRootPath}
-        layoutRootPaths.0 = EXT:eea_components12/Resources/Private/Layouts/
+        layoutRootPaths.0 = EXT:eeacomponents/Resources/Private/Layouts/
         layoutRootPaths.1 = {$plugin.tx_eeacomponents_productfinder.view.layoutRootPath}
     }
     persistence {
@@ -86,19 +86,3 @@ plugin.tx_eeacomponents._CSS_DEFAULT_STYLE (
         color: green;
     }
 )
-
-
-# 20.08.2024
-# Register the plugin for use in content elements
-tt_content.list.20.eeacomponents_productfinder = USER
-tt_content.list.20.eeacomponents_productfinder {
-    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-    extensionName = Eeacomponents
-    pluginName = Productfinder
-    vendorName = Eea
-    controller = Productfinder
-    action = list
-    settings {
-        # Add your plugin-specific settings here
-    }
-}

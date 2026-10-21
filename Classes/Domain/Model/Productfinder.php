@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eea\EeaComponents\Domain\Model;
+namespace Eea\Eeacomponents\Domain\Model;
 
 
 /**
@@ -25,14 +25,14 @@ class Productfinder extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      *
      * @var string
      */
-    protected $customerid = null;
+    protected string $customerid = '';
 
     /**
      * Returns the customerid
      *
      * @return string
      */
-    public function getCustomerid()
+    public function getCustomerid(): string
     {
         return $this->customerid;
     }
@@ -43,7 +43,7 @@ class Productfinder extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param string $customerid
      * @return void
      */
-    public function setCustomerid(string $customerid)
+    public function setCustomerid(string $customerid): void
     {
         $this->customerid = $customerid;
     }
