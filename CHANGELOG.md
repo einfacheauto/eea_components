@@ -1,5 +1,18 @@
 # Changelog
 
+## [13.1.0](https://github.com/einfacheauto/eea_components/compare/v13.0.0...v13.1.0) (2026-10-21)
+
+
+### Features
+
+* add TYPO3 13.4 LTS support ([8206278](https://github.com/einfacheauto/eea_components/commit/820627847b9589b09d19d8c4c2b4bac5b8c4da79))
+* add TYPO3 13.4 LTS support, tests and CI ([7cefe0e](https://github.com/einfacheauto/eea_components/commit/7cefe0ebcfa80fde896e898210e1eb0219b2b761))
+
+
+### Bug Fixes
+
+* load component scripts as ES modules ([2b2cd19](https://github.com/einfacheauto/eea_components/commit/2b2cd195b0b54ce3ec13d1ccfa907b144705c326))
+
 ## [13.0.0](https://github.com/einfacheauto/eea_components/compare/v12.0.0...v13.0.0) (2024-11-27)
 
 
